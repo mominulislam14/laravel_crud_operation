@@ -22,3 +22,11 @@ Route::get('/home',[HomeController::class,'index']);
 Route::post('/upload',[HomeController::class,'uploaddata']);
 
 Route::get('/view',[HomeController::class,'viewdata']);
+
+Route::get('/delete/{id}',[HomeController::class,'delete']);
+
+Route::get('/search',[HomeController::class,'search']);
+
+Route::get('/update_view/{id}',[HomeController::class,'update_view']);
+
+Route::post('/update/{id}',[HomeController::class,'update_data']);
